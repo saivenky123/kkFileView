@@ -14,7 +14,7 @@ RUN sed -i 's@//.*archive.ubuntu.com@//mirrors.aliyun.com@g' /etc/apt/sources.li
     apt-get install -y --no-install-recommends ttf-wqy-microhei ttf-wqy-zenhei xfonts-wqy &&\
 	apt-get autoremove -y &&\
     apt-get clean &&\
-    rm -rf /var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/* 
 
 # 内置一些常用的中文字体，避免普遍性乱码
 ADD fonts/* /usr/share/fonts/chinese/
